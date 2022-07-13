@@ -1,13 +1,13 @@
 <resources>
     <string name="app_name">Штурман</string>
     <string name="text_link_ehs"> <a href="https://tutorial.eyehunts.com//">https://tutorial.eyehunts.com//</a></string>
-    <string name="rule_link"><a href="http:////www.consultant.ru//document//cons_doc_LAW_280037//"><u>Ст. 26.8, ч. 1 ст. 25.1. КоАП РФ, ст. 151 Приказа МВД России от 23.08.2017 № 664 «Об утверждении Административного регламента по надзору за соблюдением требований безопасности дорожного движения»</u></a></string>
+    <string name="rule_link1"><a href="http:////www.consultant.ru//document//cons_doc_LAW_280037//"><u>Ст. 26.8, ч. 1 ст. 25.1. КоАП РФ, ст. 151 Приказа МВД России от 23.08.2017 № 664 «Об утверждении Административного регламента по надзору за соблюдением требований безопасности дорожного движения»</u></a></string>
     <string name="text_web"> <a href="http:////www.consultant.ru//">http:////www.consultant.ru//</a></string>
     <string name="contacts_name">Контакты</string>
     <string name="contacts_phone">+7 495 667-04-02</string>
     <string name="contacts_email">contact@consultant.ru</string>
     <string name="contacts_website">http://ГИБДД.рф/</string>
-    <string name="answer_question">Могу ли я узнать показания скорости на радаре у инспектора?</string>
-    <string name="answer_notion">И более того, инспектор должен показать Вам зафиксированные показания мобильного радара. При этом Вы имеете право просмотреть сертификат на радар, в котором содержится информация о проверке и погрешности прибора. Это может помочь Вам оспорить нарушение как по погрешности, так и по отсутствию пометки о проверке.</string>
-    <string name="answer_qiuck">Да</string>
+    <string name="answer_question1">Могу ли я узнать показания скорости на радаре у инспектора?</string>
+    <string name="answer_notion1">И более того, инспектор должен показать Вам зафиксированные показания мобильного радара. При этом Вы имеете право просмотреть сертификат на радар, в котором содержится информация о проверке и погрешности прибора. Это может помочь Вам оспорить нарушение как по погрешности, так и по отсутствию пометки о проверке.</string>
+    <string name="answer_qiuck1">Да</string>
 </resources>
