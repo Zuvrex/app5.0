@@ -20,7 +20,7 @@ class ContentActivity: AppCompatActivity() {
         }
 
         // Creating web link activity.
-        var textRuleLink: TextView = findViewById(R.id.link_3562)
+        var textRuleLink: TextView = findViewById(R.id.link_id)
         textRuleLink.setOnClickListener {
             val i = Intent(Intent.ACTION_VIEW, Uri.parse("http://ГИБДД.рф/"))
             startActivity(i)

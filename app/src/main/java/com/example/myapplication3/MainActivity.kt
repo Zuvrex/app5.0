@@ -3,9 +3,7 @@ package com.example.myapplication3
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.widget.ArrayAdapter
 import android.widget.Button
-import android.widget.ListView
 
 class MainActivity : AppCompatActivity() {
     val db = DataBase(this)
@@ -14,14 +12,20 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        db.open()
+        db.open()   // открываем базу данных для работы с ней
+//        db.execute(DROP_TABLE_NODE)
+//        db.execute(DROP_TABLE_QUESTION)
+//        db.execute(CREATE_TABLE_QUESTION)
+//        db.execute(CREATE_TABLE_NODE)
+//        db.execute(FILL_QUESTION)
+//        db.execute(FILL_NODE)
         val button1 = findViewById<Button>(R.id.button_for_car)
         val button2 = findViewById<Button>(R.id.button_for_kik)
         val button3 = findViewById<Button>(R.id.button_for_important)
 
         button1.setOnClickListener {
             val intent = Intent(this, QuestionsList::class.java)
-            intent.putExtra("button", 1)
+            intent.putExtra("button", 1)    // номер кнопки передается в следующий Activity (т. е. список вопросов), чтобы можно было понять, какая кнопка была нажата, и вывести нужные вопросы из базы
             startActivity(intent)
         }
 
@@ -38,6 +42,7 @@ class MainActivity : AppCompatActivity() {
         }
     }
 
+    // закрываем базу при окончании работы activity
     override fun onDestroy() {
         super.onDestroy()
         db.close()
