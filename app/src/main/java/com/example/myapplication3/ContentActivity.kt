@@ -3,7 +3,6 @@ package com.example.myapplication3
 import android.content.Intent
 import android.net.Uri
 import android.os.Bundle
-import android.os.PersistableBundle
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
@@ -21,7 +20,7 @@ class ContentActivity: AppCompatActivity() {
         }
 
         // Creating web link activity.
-        var textRuleLink: TextView = findViewById(R.id.textRuleLink)
+        var textRuleLink: TextView = findViewById(R.id.link_id)
         textRuleLink.setOnClickListener {
             val i = Intent(Intent.ACTION_VIEW, Uri.parse("http://www.consultant.ru/document/cons_doc_LAW_280037/"))
             startActivity(i)
