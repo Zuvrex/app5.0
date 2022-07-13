@@ -23,7 +23,7 @@ class ContentActivity: AppCompatActivity() {
         // Creating web link activity.
         var textRuleLink: TextView = findViewById(R.id.textRuleLink)
         textRuleLink.setOnClickListener {
-            val i = Intent(Intent.ACTION_VIEW, Uri.parse("http://ГИБДД.рф/"))
+            val i = Intent(Intent.ACTION_VIEW, Uri.parse("http://www.consultant.ru/document/cons_doc_LAW_280037/"))
             startActivity(i)
                 //http://www.consultant.ru/document/cons_doc_LAW_280037/
         }
