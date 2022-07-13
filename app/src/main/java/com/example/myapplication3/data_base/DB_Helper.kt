@@ -5,7 +5,7 @@ import android.database.sqlite.SQLiteDatabase
 import android.database.sqlite.SQLiteOpenHelper
 import com.example.myapplication3.*
 
-class DB_Helper(context: Context): SQLiteOpenHelper(context, "Tree.db", null, 10) {
+class DB_Helper(context: Context): SQLiteOpenHelper(context, "Tree.db", null, 12) {
     override fun onCreate(db: SQLiteDatabase?) {
         db?.execSQL(CREATE_TABLE_QUESTION)
         db?.execSQL(CREATE_TABLE_NODE)
