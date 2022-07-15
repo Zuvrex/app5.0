@@ -24,19 +24,19 @@ class MainActivity : AppCompatActivity() {
         val button3 = findViewById<Button>(R.id.button_for_important)
 
         button1.setOnClickListener {
-            val intent = Intent(this, QuestionsList::class.java)
+            val intent = Intent(this, SubquestionsAndAnswers::class.java)
             intent.putExtra("button", 1)    // номер кнопки передается в следующий Activity (т. е. список вопросов), чтобы можно было понять, какая кнопка была нажата, и вывести нужные вопросы из базы
             startActivity(intent)
         }
 
         button2.setOnClickListener {
-            val intent = Intent(this, QuestionsList::class.java)
+            val intent = Intent(this, SubquestionsAndAnswers::class.java)
             intent.putExtra("button", 2)
             startActivity(intent)
         }
 
         button3.setOnClickListener {
-            val intent = Intent(this, QuestionsList::class.java)
+            val intent = Intent(this, SubquestionsAndAnswers::class.java)
             intent.putExtra("button", 3)
             startActivity(intent)
         }
