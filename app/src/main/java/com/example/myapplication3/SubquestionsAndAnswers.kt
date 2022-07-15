@@ -35,15 +35,15 @@ class SubquestionsAndAnswers : AppCompatActivity() {
 
         // Сдедующий код срабатывает при нажатии на вопрос
         listView.setOnItemClickListener{parent, view, position, id ->
-            question.text = qu_table.question[position] // присваеваем в поле вопроса текст вопроса
-            answer.text = qu_table.answer[position] // присваеваем в поле ответа текст ответа
             val is_test = qu_table.is_test[position]    // флаг (ведет ли вопрос к тесту или нет)
-
             // Если is_test = 1 переходи на Activity с тестом, иначе переходим к следующим подвопросам и ответам
             if (is_test != 0) {
                 val intent = Intent(this, TestActivity::class.java)
                 startActivity(intent)
             } else {
+                question.text = qu_table.question[position] // присваеваем в поле вопроса текст вопроса
+                answer.text = qu_table.answer[position] // присваеваем в поле ответа текст ответа
+
                 stack.add(qu_table.ID[position])    // В стэк записываем ID вопроса
                 qu_table = db.list_of_questions(stack.last())   // Подвопросы для этого вопроса
                 listView.adapter = ArrayAdapter(this, android.R.layout.simple_expandable_list_item_1, qu_table.question) // Помещаем вопросы в список на экране
