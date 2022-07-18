@@ -4,6 +4,8 @@ import android.content.Intent
 import android.net.Uri
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.View
+import android.widget.Button
 import android.widget.TextView
 
 class ContactsActivity : AppCompatActivity() {
@@ -12,10 +14,20 @@ class ContactsActivity : AppCompatActivity() {
         setContentView(R.layout.contacts)
 
         // Creating web link activity.
-        var webText: TextView = findViewById(R.id.textView8);
+        val webText: TextView = findViewById(R.id.textView8);
         webText.setOnClickListener {
             val i = Intent(Intent.ACTION_VIEW, Uri.parse("http://ГИБДД.рф/"))
             startActivity(i)
         }
+
+        // кнопка для возвращения назад
+        val back = findViewById<Button>(R.id.back)
+        back.setOnClickListener {
+            this.finish()
+        }
+    }
+    fun home_activity(view: View){
+        val Home_acitivity=Intent(this,MainActivity::class.java)
+        startActivity(Home_acitivity)
     }
 }
