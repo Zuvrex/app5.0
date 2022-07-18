@@ -14,7 +14,33 @@
         android:theme="@style/Theme.MyApplication3"
         tools:targetApi="31">
         <activity
-            android:name=".TestActivity"
+            android:name=".DictionaryActivity"
+            android:exported="false"
+            android:label="@string/title_activity_dictionary"
+            android:theme="@style/Theme.MyApplication3.NoActionBar" />
+        <activity
+            android:name=".test.TestAnswer4"
+            android:exported="false" />
+        <activity
+            android:name=".test.TestAnswer3"
+            android:exported="false" />
+        <activity
+            android:name=".test.TestAnswer2"
+            android:exported="false" />
+        <activity
+            android:name=".test.TestAnswer1"
+            android:exported="false" />
+        <activity
+            android:name=".test.TestQuestion3"
+            android:exported="false" />
+        <activity
+            android:name=".test.TestInfo1"
+            android:exported="false" />
+        <activity
+            android:name=".test.TestQuestion2"
+            android:exported="false" />
+        <activity
+            android:name=".test.TestQuestion1"
             android:exported="false" />
         <activity
             android:name=".SubquestionsAndAnswers"

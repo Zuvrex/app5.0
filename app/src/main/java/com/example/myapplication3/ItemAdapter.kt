@@ -33,11 +33,11 @@ class ItemAdapter(private val context: Context, private val foodItemList:Mutable
 
         fun bind(listItem: ListItem, context: Context){
             binding.foodItemNameTV.text = listItem.name
-            itemView.setOnClickListener() {
-                val i = Intent(context, ContentActivity::class.java).apply {
-                }
-                context.startActivity(i)
-            }
+//                itemView.setOnClickListener() {
+//                val i = Intent(context, ContentActivity::class.java).apply {
+//                }
+//                context.startActivity(i)
+            //}
         }
 
     }

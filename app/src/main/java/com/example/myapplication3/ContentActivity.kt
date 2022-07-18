@@ -3,6 +3,8 @@ package com.example.myapplication3
 import android.content.Intent
 import android.net.Uri
 import android.os.Bundle
+import android.view.View
+import android.widget.Button
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
@@ -19,6 +21,13 @@ class ContentActivity: AppCompatActivity() {
             startActivity(intent)
         }
 
+        val home = findViewById<Button>(R.id.home)
+        home.setOnClickListener {
+            val intent = Intent(this, MainActivity::class.java)
+            intent.flags = Intent.FLAG_ACTIVITY_CLEAR_TOP
+            startActivity(intent)
+        }
+
         // Creating web link activity.
         var textRuleLink: TextView = findViewById(R.id.link_id)
         textRuleLink.setOnClickListener {
@@ -27,4 +36,5 @@ class ContentActivity: AppCompatActivity() {
                 //http://www.consultant.ru/document/cons_doc_LAW_280037/
         }
     }
+
 }

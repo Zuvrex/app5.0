@@ -4,6 +4,7 @@ import android.content.Intent
 import android.net.Uri
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.View
 import android.widget.Button
 import android.widget.TextView
 
@@ -23,6 +24,13 @@ class ContactsActivity : AppCompatActivity() {
         val back = findViewById<Button>(R.id.back)
         back.setOnClickListener {
             this.finish()
+        }
+
+        val home = findViewById<Button>(R.id.home)
+        home.setOnClickListener {
+            val intent = Intent(this, MainActivity::class.java)
+            intent.flags = Intent.FLAG_ACTIVITY_CLEAR_TOP
+            startActivity(intent)
         }
     }
 }

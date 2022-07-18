@@ -4,6 +4,7 @@ import android.content.Intent
 import android.os.Bundle
 import android.widget.*
 import androidx.appcompat.app.AppCompatActivity
+import com.example.myapplication3.test.TestQuestion1
 
 
 class SubquestionsAndAnswers : AppCompatActivity() {
@@ -28,9 +29,18 @@ class SubquestionsAndAnswers : AppCompatActivity() {
         var qu_table = db.list_of_questions(stack.last())   // список вопросов для этой кнопки (таблица)
         listView.adapter = ArrayAdapter(this, android.R.layout.simple_expandable_list_item_1, qu_table.question)    // помещаем вопросы в список на экране
         if (stack.last() == 1) {
-            question.text = "Личный автомобиль"
+            question.text = "ДТП на машине"
         } else if (stack.last() == 2) {
-            question.text = "Кикшеринг"
+            question.text = "ДТП на самокате"
+        }
+        else if (stack.last() == 3) {
+            question.text = "ПДД для машины"
+        }
+        else if (stack.last() == 4) {
+            question.text = "ПДД для самоката"
+        }
+        else if (stack.last() == 5) {
+            question.text = "Общение с инспектором"
         }
 
         // Сдедующий код срабатывает при нажатии на вопрос
@@ -38,7 +48,7 @@ class SubquestionsAndAnswers : AppCompatActivity() {
             val is_test = qu_table.is_test[position]    // флаг (ведет ли вопрос к тесту или нет)
             // Если is_test = 1 переходи на Activity с тестом, иначе переходим к следующим подвопросам и ответам
             if (is_test != 0) {
-                val intent = Intent(this, TestActivity::class.java)
+                val intent = Intent(this, TestQuestion1::class.java)
                 startActivity(intent)
             } else {
                 question.text = qu_table.question[position] // присваеваем в поле вопроса текст вопроса
@@ -49,6 +59,13 @@ class SubquestionsAndAnswers : AppCompatActivity() {
                 listView.adapter = ArrayAdapter(this, android.R.layout.simple_expandable_list_item_1, qu_table.question) // Помещаем вопросы в список на экране
                 scrollView.scrollTo(0, 0)   // скролл наверхэкрана, чтобы вернуться в начало
             }
+        }
+
+        val home = findViewById<Button>(R.id.home)
+        home.setOnClickListener {
+            val intent = Intent(this, MainActivity::class.java)
+            intent.flags = Intent.FLAG_ACTIVITY_CLEAR_TOP
+            startActivity(intent)
         }
 
         // кнопка для возвращения назад

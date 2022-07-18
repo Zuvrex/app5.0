@@ -4,7 +4,8 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:layout_margin="6dp"
-    android:background="#752AFA">
+    android:background="#F8DCE5"
+    android:visibility="visible">
 
     <TextView
         android:id="@+id/foodItemNameTV"
@@ -12,7 +13,7 @@
         android:layout_height="wrap_content"
         android:layout_margin="10dp"
         android:text="Food Item 1"
-        android:textColor="#FFF"
+        android:textColor="#000000"
         android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
