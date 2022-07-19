@@ -28,6 +28,7 @@ class DictionaryActivity : AppCompatActivity() {
     }
     fun home_activity(view: View){
         val Home_acitivity= Intent(this,MainActivity::class.java)
+        intent.flags = Intent.FLAG_ACTIVITY_CLEAR_TOP
         startActivity(Home_acitivity)
     }
 }

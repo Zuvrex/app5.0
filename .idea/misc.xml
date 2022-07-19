@@ -3,26 +3,6 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/Users/alexv/Downloads/app5.0-9735a009b40981659ac0a4d8fd510afcf9be2631/app5.0-9735a009b40981659ac0a4d8fd510afcf9be2631/app/src/main/res/layout/activity_answer.xml" value="0.17552083333333332" />
-        <entry key="..\:/Users/alexv/Downloads/app5.0-9735a009b40981659ac0a4d8fd510afcf9be2631/app5.0-9735a009b40981659ac0a4d8fd510afcf9be2631/app/src/main/res/layout/activity_main.xml" value="0.1" />
-        <entry key="..\:/Users/alexv/Downloads/app5.0-9735a009b40981659ac0a4d8fd510afcf9be2631/app5.0-9735a009b40981659ac0a4d8fd510afcf9be2631/app/src/main/res/layout/activity_main2.xml" value="0.14166666666666666" />
-        <entry key="..\:/Users/alexv/Downloads/app5.0-9735a009b40981659ac0a4d8fd510afcf9be2631/app5.0-9735a009b40981659ac0a4d8fd510afcf9be2631/app/src/main/res/layout/activity_main3.xml" value="0.14583333333333334" />
-        <entry key="..\:/Users/alexv/Downloads/app5.0-9735a009b40981659ac0a4d8fd510afcf9be2631/app5.0-9735a009b40981659ac0a4d8fd510afcf9be2631/app/src/main/res/layout/activity_test_answer1.xml" value="0.17447916666666666" />
-        <entry key="..\:/Users/alexv/Downloads/app5.0-9735a009b40981659ac0a4d8fd510afcf9be2631/app5.0-9735a009b40981659ac0a4d8fd510afcf9be2631/app/src/main/res/layout/activity_test_answer2.xml" value="0.17552083333333332" />
-        <entry key="..\:/Users/alexv/Downloads/app5.0-9735a009b40981659ac0a4d8fd510afcf9be2631/app5.0-9735a009b40981659ac0a4d8fd510afcf9be2631/app/src/main/res/layout/activity_test_answer3.xml" value="0.17447916666666666" />
-        <entry key="..\:/Users/alexv/Downloads/app5.0-9735a009b40981659ac0a4d8fd510afcf9be2631/app5.0-9735a009b40981659ac0a4d8fd510afcf9be2631/app/src/main/res/layout/activity_test_answer4.xml" value="0.17447916666666666" />
-        <entry key="..\:/Users/alexv/Downloads/app5.0-9735a009b40981659ac0a4d8fd510afcf9be2631/app5.0-9735a009b40981659ac0a4d8fd510afcf9be2631/app/src/main/res/layout/activity_test_info1.xml" value="0.17447916666666666" />
-        <entry key="..\:/Users/alexv/Downloads/app5.0-9735a009b40981659ac0a4d8fd510afcf9be2631/app5.0-9735a009b40981659ac0a4d8fd510afcf9be2631/app/src/main/res/layout/activity_test_question1.xml" value="0.17447916666666666" />
-        <entry key="..\:/Users/alexv/Downloads/app5.0-9735a009b40981659ac0a4d8fd510afcf9be2631/app5.0-9735a009b40981659ac0a4d8fd510afcf9be2631/app/src/main/res/layout/activity_test_question2.xml" value="0.14316239316239315" />
-        <entry key="..\:/Users/alexv/Downloads/app5.0-9735a009b40981659ac0a4d8fd510afcf9be2631/app5.0-9735a009b40981659ac0a4d8fd510afcf9be2631/app/src/main/res/layout/activity_test_question3.xml" value="0.130859375" />
-        <entry key="..\:/Users/alexv/Downloads/app5.0-9735a009b40981659ac0a4d8fd510afcf9be2631/app5.0-9735a009b40981659ac0a4d8fd510afcf9be2631/app/src/main/res/layout/answer_page.xml" value="0.13179347826086957" />
-        <entry key="..\:/Users/alexv/Downloads/app5.0-9735a009b40981659ac0a4d8fd510afcf9be2631/app5.0-9735a009b40981659ac0a4d8fd510afcf9be2631/app/src/main/res/layout/contacts.xml" value="0.15353260869565216" />
-        <entry key="..\:/Users/alexv/Downloads/app5.0-9735a009b40981659ac0a4d8fd510afcf9be2631/app5.0-9735a009b40981659ac0a4d8fd510afcf9be2631/app/src/main/res/layout/content_layout.xml" value="0.13179347826086957" />
-        <entry key="..\:/Users/alexv/Downloads/app5.0-9735a009b40981659ac0a4d8fd510afcf9be2631/app5.0-9735a009b40981659ac0a4d8fd510afcf9be2631/app/src/main/res/layout/content_layout2.xml" value="0.1" />
-        <entry key="..\:/Users/alexv/Downloads/app5.0-9735a009b40981659ac0a4d8fd510afcf9be2631/app5.0-9735a009b40981659ac0a4d8fd510afcf9be2631/app/src/main/res/layout/content_scrolling.xml" value="0.14583333333333334" />
-        <entry key="..\:/Users/alexv/Downloads/app5.0-9735a009b40981659ac0a4d8fd510afcf9be2631/app5.0-9735a009b40981659ac0a4d8fd510afcf9be2631/app/src/main/res/layout/item_layout.xml" value="0.13179347826086957" />
-        <entry key="..\:/Users/alexv/Downloads/app5.0-9735a009b40981659ac0a4d8fd510afcf9be2631/app5.0-9735a009b40981659ac0a4d8fd510afcf9be2631/app/src/main/res/layout/test_page.xml" value="0.15989583333333332" />
-        <entry key="..\:/Users/alexv/Downloads/app5.0-9735a009b40981659ac0a4d8fd510afcf9be2631/app5.0-9735a009b40981659ac0a4d8fd510afcf9be2631/app/src/main/res/menu/popup_menu.xml" value="0.1" />
         <entry key="..\:/app3/app/src/main/res/layout/activity_main.xml" value="0.11684782608695653" />
         <entry key="..\:/app3/app/src/main/res/layout/activity_main2.xml" value="0.11684782608695653" />
         <entry key="..\:/app3/app/src/main/res/layout/activity_main3.xml" value="0.12545289855072464" />

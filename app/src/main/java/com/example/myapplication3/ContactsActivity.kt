@@ -25,9 +25,12 @@ class ContactsActivity : AppCompatActivity() {
         back.setOnClickListener {
             this.finish()
         }
-    }
-    fun home_activity(view: View){
-        val Home_acitivity=Intent(this,MainActivity::class.java)
-        startActivity(Home_acitivity)
+
+        val home = findViewById<Button>(R.id.home)
+        home.setOnClickListener {
+            val intent = Intent(this, MainActivity::class.java)
+            intent.flags = Intent.FLAG_ACTIVITY_CLEAR_TOP
+            startActivity(intent)
+        }
     }
 }
