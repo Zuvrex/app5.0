@@ -10,10 +10,11 @@ class TestInfo1 : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_test_info1)
+        val id = intent.getIntExtra("id", 0)
         val button = findViewById<Button>(R.id.button)
         button.setOnClickListener {
             val intent = Intent(this, TestQuestion3::class.java)
-            intent.putExtra("button", 1)
+            intent.putExtra("id", id)
             startActivity(intent)
             finish()
         }

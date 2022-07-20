@@ -3,6 +3,12 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Ilya/app5.0-9b87a19bc69a3d099a2b9192abf17925abe3896a/app/src/main/res/layout/activity_dictionary.xml" value="0.16666666666666666" />
+        <entry key="..\:/Ilya/app5.0-9b87a19bc69a3d099a2b9192abf17925abe3896a/app/src/main/res/layout/activity_main.xml" value="0.16666666666666666" />
+        <entry key="..\:/Ilya/app5.0-9b87a19bc69a3d099a2b9192abf17925abe3896a/app/src/main/res/layout/activity_main2.xml" value="0.16666666666666666" />
+        <entry key="..\:/Ilya/app5.0-9b87a19bc69a3d099a2b9192abf17925abe3896a/app/src/main/res/layout/activity_main3.xml" value="0.16666666666666666" />
+        <entry key="..\:/Ilya/app5.0-9b87a19bc69a3d099a2b9192abf17925abe3896a/app/src/main/res/layout/activity_test_answer1.xml" value="0.16666666666666666" />
+        <entry key="..\:/Ilya/app5.0-9b87a19bc69a3d099a2b9192abf17925abe3896a/app/src/main/res/layout/answer_page.xml" value="0.16666666666666666" />
         <entry key="..\:/app3/app/src/main/res/layout/activity_main.xml" value="0.11684782608695653" />
         <entry key="..\:/app3/app/src/main/res/layout/activity_main2.xml" value="0.11684782608695653" />
         <entry key="..\:/app3/app/src/main/res/layout/activity_main3.xml" value="0.12545289855072464" />
@@ -13,6 +19,10 @@
         <entry key="..\:/repositories/app5.0/app/src/main/res/layout/activity_main.xml" value="0.17708333333333334" />
         <entry key="..\:/repositories/app5.0/app/src/main/res/layout/activity_main2.xml" value="0.17708333333333334" />
         <entry key="..\:/repositories/app5.0/app/src/main/res/layout/activity_main3.xml" value="0.17708333333333334" />
+        <entry key="..\:/repositories/app5.0/app/src/main/res/layout/activity_test_answer1.xml" value="0.1" />
+        <entry key="..\:/repositories/app5.0/app/src/main/res/layout/activity_test_answer2.xml" value="0.1" />
+        <entry key="..\:/repositories/app5.0/app/src/main/res/layout/activity_test_answer3.xml" value="0.1" />
+        <entry key="..\:/repositories/app5.0/app/src/main/res/layout/activity_test_answer4.xml" value="0.1" />
         <entry key="..\:/repositories/app5.0/app/src/main/res/layout/answer_page.xml" value="0.12083333333333333" />
         <entry key="..\:/repositories/app5.0/app/src/main/res/layout/contacts.xml" value="0.17708333333333334" />
         <entry key="..\:/repositories/app5.0/app/src/main/res/layout/content_layout.xml" value="0.17708333333333334" />

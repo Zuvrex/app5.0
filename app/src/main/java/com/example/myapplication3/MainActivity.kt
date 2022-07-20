@@ -4,6 +4,7 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
+import android.widget.ImageView
 import android.widget.PopupMenu
 import android.widget.Toast
 
@@ -26,6 +27,7 @@ class MainActivity : AppCompatActivity() {
         val var_for_PDD_cat_button = findViewById<Button>(R.id.button_for_PDD_car)
         val var_for_PDD_kik_button = findViewById<Button>(R.id.button_for_PDD_kik)
         val var_for_GIBDD = findViewById<Button>(R.id.button8)
+        val var_for_kikshering = findViewById<Button>(R.id.button_for_kikshering)
 
         val button = findViewById<Button>(R.id.button1)
         button.setOnClickListener {
@@ -77,6 +79,18 @@ class MainActivity : AppCompatActivity() {
         var_for_GIBDD.setOnClickListener {
             val intent = Intent(this, SubquestionsAndAnswers::class.java)
             intent.putExtra("button", 5)
+            startActivity(intent)
+        }
+
+        var_for_kikshering.setOnClickListener {
+            val intent = Intent(this, SubquestionsAndAnswers::class.java)
+            intent.putExtra("button", 6)
+            startActivity(intent)
+        }
+
+        var button_for_Image: ImageView = findViewById(R.id.imageView)
+        button_for_Image.setOnClickListener {
+            val intent = Intent(this, ContactsActivity::class.java)
             startActivity(intent)
         }
     }

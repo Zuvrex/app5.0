@@ -68,13 +68,13 @@
         android:translationY="340dp" />
 
     <Button
-        android:id="@+id/button_for_hot"
+        android:id="@+id/button_for_kikshering"
         android:layout_width="274dp"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:text="Горячая линия"
+        android:text="Кикшеринг"
         android:translationX="10dp"
-        android:translationY="70dp"
+        android:translationY="130dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/button_for_PDD_car" />
@@ -86,7 +86,7 @@
         android:layout_gravity="center"
         android:text="Формы претензий"
         android:translationX="10dp"
-        android:translationY="130dp"
+        android:translationY="190dp"
         tools:layout_editor_absoluteX="10dp"
         tools:layout_editor_absoluteY="130dp" />
 
@@ -97,7 +97,7 @@
         android:layout_gravity="center"
         android:text="Общение с инспектором"
         android:translationX="10dp"
-        android:translationY="190dp"
+        android:translationY="70dp"
         tools:layout_editor_absoluteX="10dp"
         tools:layout_editor_absoluteY="190dp" />
 
@@ -105,4 +105,13 @@
         layout="@layout/content_layout2"
         android:foreground="@drawable/ic_launcher_background" />
 
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="56dp"
+        android:layout_height="57dp"
+        android:layout_gravity="bottom|right"
+        android:translationX="-10dp"
+        android:translationY="-10dp"
+        android:background="@color/first"
+        app:srcCompat="@android:drawable/stat_sys_speakerphone" />
 </FrameLayout>
