@@ -23,6 +23,11 @@ class ChoiceFormActivity : AppCompatActivity() {
             startActivity(intent)
         }
 
+        val buttonCivicIsk = findViewById<Button>(R.id.button15)
+        buttonCivicIsk.setOnClickListener {
+            val intent = Intent(this, CivicIskFormActivity::class.java)
+            startActivity(intent)
+        }
         val text = findViewById<TextView>(R.id.textView9)
         text.setMovementMethod(ScrollingMovementMethod())
     }
