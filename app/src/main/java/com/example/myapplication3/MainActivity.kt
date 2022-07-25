@@ -39,7 +39,7 @@ class MainActivity : AppCompatActivity() {
                 when(item.itemId) {
                     R.id.action_dict ->
                     {
-                        val intent = Intent(this, MainActivity3::class.java)
+                        val intent = Intent(this, DictionaryActivity::class.java)
                         startActivity(intent)
                     }
                     R.id.action_convers ->

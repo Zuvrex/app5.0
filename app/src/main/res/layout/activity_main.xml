@@ -95,7 +95,7 @@
         tools:layout_editor_absoluteY="190dp" />
 
     <include
-        layout="@layout/content_layout2"
+        layout="@layout/layout_for_right_menu"
         android:foreground="@drawable/ic_launcher_background" />
 
     <ImageView

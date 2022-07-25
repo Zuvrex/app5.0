@@ -36,12 +36,6 @@
             android:name=".IskFormActivity"
             android:exported="false" />
         <activity
-            android:name=".DictionaryActivity"
-            android:exported="true"
-            android:label="@string/title_activity_dictionary"
-            android:theme="@style/Theme.MyApplication3.NoActionBar"
-            tools:ignore="AppLinkUrlError" />
-        <activity
             android:name=".test.TestAnswer4"
             android:exported="false" />
         <activity
@@ -82,7 +76,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".MainActivity3"
+            android:name=".DictionaryActivity"
             android:exported="true"
             tools:ignore="AppLinkUrlError">
             <intent-filter>
@@ -95,9 +89,6 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".MainActivity2"
-            android:exported="false" />
-        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
@@ -106,7 +97,6 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".ContentActivity" />
     </application>
 
 </manifest>
