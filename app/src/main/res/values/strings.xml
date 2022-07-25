@@ -5,7 +5,7 @@
     <string name="text_web"> <a href="http:////www.consultant.ru//">http:////www.consultant.ru//</a></string>
     <string name="contacts_name">Экстренные номера</string>
     <string name="contacts_phone">В любой экстренной ситуации звоните по номеру 112.</string>
-    <string name="contacts_email">Полиция: 102; Скорая помощь: 103</string>
+    <string name="contacts_email">Полиция: 102</string>
     <string name="contacts_website">http://ГИБДД.рф/</string>
     <string name="answer_question1">Могу ли я узнать показания скорости на радаре у инспектора?</string>
     <string name="answer_notion1">И более того, инспектор должен показать Вам зафиксированные показания мобильного радара. При этом Вы имеете право просмотреть сертификат на радар, в котором содержится информация о проверке и погрешности прибора. Это может помочь Вам оспорить нарушение как по погрешности, так и по отсутствию пометки о проверке.</string>
