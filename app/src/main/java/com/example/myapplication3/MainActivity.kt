@@ -22,6 +22,7 @@ class MainActivity : AppCompatActivity() {
 //        db.execute(CREATE_TABLE_NODE)
 //        db.execute(FILL_QUESTION)
 //        db.execute(FILL_NODE)
+
         val var_for_DTP_cat_button = findViewById<Button>(R.id.button_for_DTP_car)
         val var_for_DTP_kik_button = findViewById<Button>(R.id.button_for_DTP_kik)
         val var_for_PDD_cat_button = findViewById<Button>(R.id.button_for_PDD_car)

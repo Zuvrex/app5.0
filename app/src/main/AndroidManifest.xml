@@ -18,7 +18,17 @@
             android:exported="false" />
         <activity
             android:name=".ChoiceFormActivity"
-            android:exported="false" />
+            android:exported="true"
+            tools:ignore="AppLinkUrlError" >
+            <intent-filter>
+            <action android:name="android.intent.action.VIEW" />
+
+            <category android:name="android.intent.category.DEFAULT" />
+
+            <data android:host="complaint" />
+            <data android:scheme="myappscheme" />
+            </intent-filter>
+        </activity>
         <activity
             android:name=".IskFormActivity"
             android:exported="false" />
@@ -57,7 +67,17 @@
             android:exported="false" />
         <activity
             android:name=".ContactsActivity"
-            android:exported="false" />
+            android:exported="true"
+            tools:ignore="AppLinkUrlError" >
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data android:host="stack1" />
+                <data android:scheme="myappscheme" />
+            </intent-filter>
+        </activity>
         <activity
             android:name=".MainActivity3"
             android:exported="true"
