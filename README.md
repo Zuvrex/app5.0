@@ -8,7 +8,7 @@
 3.2) DictListItem - класс для одного элемента списка (то есть одного термина)<br>
 3.3) dictionary_item_layout - так выглядит один элемент списка<br>
 
-4) ChoiceFormActivity (activity_choice_form) - первый экран для раздела Жалобы с инструкцией пользователю и тремя кнопками перехода далее
+4) ChoiceFormActivity (activity_choice_form) - первый экран для раздела Жалобы с инструкцией пользователю и тремя кнопками перехода далее<br>
 4.1) CivicIskFormActivity (activity_civic_isk_form) - экран с инструкцией и образцом для гражданского иска<br>
 4.2) ComplaintFormActivity (activity_complaint_form) - экран с инструкцией и pdf-образцом для подачи жалобы начальнику ГИБДД<br>
 4.3) IskFormActivity (activity_isk_form) - экран с инструкцией и pdf-образцом для подачи жалобы в суд<br>
