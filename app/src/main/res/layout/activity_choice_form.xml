@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:layout_margin="1sp"
+    android:layout_margin="7sp"
     tools:context=".ChoiceFormActivity">
 
     <TextView
@@ -29,49 +29,73 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView10">
 
-        <TextView
-            android:id="@+id/textView9"
-            style="@style/form_text_style"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="@string/choice_form_text"
-            android:textSize="20sp" />
+        <ScrollView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textView9"
+                    style="@style/form_text_style"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5sp"
+                    android:layout_weight="1"
+                    android:autoLink="web"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:text="@string/choice_form_text"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/textView12"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5sp"
+                    android:layout_weight="1"
+                    android:autoLink="web"
+                    android:text="@string/choice_form_link"
+                    android:textColor="#2196F3"
+                    android:textSize="20sp" />
+            </LinearLayout>
+        </ScrollView>
+
 
     </LinearLayout>
 
     <LinearLayout
         android:id="@+id/linearLayout3"
-        android:layout_width="match_parent"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
+        android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent">
 
         <Button
-            android:id="@+id/button15"
+            android:id="@+id/button12"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_margin="1sp"
             android:layout_weight="1"
-            android:text="Подаю в суд на виновника!" />
+            android:text="@string/choice_form_button_first" />
 
         <Button
             android:id="@+id/button13"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_margin="1sp"
             android:layout_weight="1"
             android:text="@string/choice_form_button_second" />
 
         <Button
-            android:id="@+id/button12"
+            android:id="@+id/button15"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_margin="1sp"
             android:layout_weight="1"
-            android:text="@string/choice_form_button_first" />
+            android:text="@string/choice_form_button_third" />
+
     </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

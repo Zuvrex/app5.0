@@ -5,12 +5,4 @@
         android:id="@+id/action_dict"
         android:title="Словарь"
         app:showAsAction="never"/>
-    <item
-        android:id="@+id/action_convers"
-        android:title="Как обжаловать"
-        app:showAsAction="never"/>
-    <item
-        android:id="@+id/action_contacts"
-        android:title="Контакты"
-        app:showAsAction="never"/>
 </menu>

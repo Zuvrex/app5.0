@@ -6,19 +6,26 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".MainActivity">
 
+    <androidx.appcompat.widget.SearchView
+        android:id="@+id/search"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:translationX="40dp"
+        android:translationY="100dp"></androidx.appcompat.widget.SearchView>
+
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textColor="@color/purple_500"
         android:text="Я попал в ДТП. Что делать?"
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
-        android:translationX="70dp"
+        android:layout_gravity="center_horizontal"
         android:translationY="180dp" />
 
     <Button
         android:id="@+id/button_for_DTP_car"
-        android:layout_width="116dp"
-        android:layout_height="wrap_content"
+        android:layout_width="120dp"
+        android:layout_height="60dp"
         android:backgroundTint="#FF5722"
         android:text="НА МАШИНЕ"
         android:translationX="70dp"
@@ -26,20 +33,20 @@
 
     <Button
         android:id="@+id/button_for_DTP_kik"
-        android:layout_width="126dp"
-        android:layout_height="wrap_content"
+        android:layout_width="120dp"
+        android:layout_height="60dp"
         android:backgroundTint="#FF5722"
-        android:text="НА САМОКАТЕ"
-        android:translationX="230dp"
-        android:translationY="230dp"/>
+        android:text="На самокате"
+        android:translationX="220dp"
+        android:translationY="230dp" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textColor="@color/purple_500"
         android:text="Вопросы по ПДД для"
+        android:layout_gravity="center_horizontal"
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
-        android:translationX="105dp"
         android:translationY="300dp"/>
 
     <Button
@@ -57,7 +64,7 @@
         android:layout_height="wrap_content"
         android:backgroundTint="#FF5722"
         android:text="САМОКАТА"
-        android:translationX="230dp"
+        android:translationX="215dp"
         android:translationY="340dp" />
 
     <Button
@@ -66,7 +73,6 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:text="Кикшеринг"
-        android:translationX="10dp"
         android:translationY="130dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -77,8 +83,7 @@
         android:layout_width="277dp"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:text="Формы претензий"
-        android:translationX="10dp"
+        android:text="Как обжаловать?"
         android:translationY="190dp"
         tools:layout_editor_absoluteX="10dp"
         tools:layout_editor_absoluteY="130dp" />
@@ -89,7 +94,6 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:text="Общение с инспектором"
-        android:translationX="10dp"
         android:translationY="70dp"
         tools:layout_editor_absoluteX="10dp"
         tools:layout_editor_absoluteY="190dp" />
@@ -97,7 +101,6 @@
     <include
         layout="@layout/layout_for_right_menu"
         android:foreground="@drawable/ic_launcher_background" />
-
     <ImageView
         android:id="@+id/imageView"
         android:layout_width="56dp"

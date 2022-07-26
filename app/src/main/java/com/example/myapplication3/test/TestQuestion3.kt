@@ -31,7 +31,7 @@ class TestQuestion3 : AppCompatActivity() {
             if (id == 13) {
                 intent.putExtra("button", 133)
             } else {
-                intent.putExtra("button", 212)
+                intent.putExtra("button", 214)
             }
             intent.putExtra("text", "\uD83D\uDEF4 => \uD83D\uDEF5 (самокатчик как водитель мопеда)")
             startActivity(intent)
@@ -44,7 +44,7 @@ class TestQuestion3 : AppCompatActivity() {
             if (id == 13) {
                 intent.putExtra("button", 133)
             } else {
-                intent.putExtra("button", 212)
+                intent.putExtra("button", 215)
             }
             intent.putExtra("text", "\uD83D\uDEF4 => \uD83C\uDFCD (самокатчик как водитель мотоцикла)")
             startActivity(intent)

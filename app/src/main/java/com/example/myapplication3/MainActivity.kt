@@ -42,11 +42,7 @@ class MainActivity : AppCompatActivity() {
                         val intent = Intent(this, DictionaryActivity::class.java)
                         startActivity(intent)
                     }
-                    R.id.action_convers ->
-                        Toast.makeText(this@MainActivity, "You Clicked : " + item.title, Toast.LENGTH_SHORT).show()
-                    R.id.action_contacts ->
-                        Toast.makeText(this@MainActivity, "You Clicked : " + item.title, Toast.LENGTH_SHORT).show()
-                }
+                    }
                 true
             })
             popupMenu.show()

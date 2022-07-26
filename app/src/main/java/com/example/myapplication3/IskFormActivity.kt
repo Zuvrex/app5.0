@@ -16,7 +16,7 @@ class IskFormActivity : AppCompatActivity() {
         button.setOnClickListener {
             val i = Intent(
                 Intent.ACTION_VIEW,
-                Uri.parse("https://drive.google.com/uc?export=download&confirm=no_antivirus&id=1sGAxOK4oVdvlQbmL51nL2ZwRAFRchkM9")
+                Uri.parse("https://drive.google.com/uc?export=download&confirm=no_antivirus&id=1rF9TfQQRq0SH9OZymJbhk3hNRR_y5coA")
             )
             startActivity(i)
         }
