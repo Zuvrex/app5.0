@@ -21,15 +21,16 @@
 
     <TextView
         android:id="@+id/textView6"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="5dp"
-        android:text="@string/contacts_phone"
+        android:layout_width="338dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="1dp"
+        android:text="Единый номер экстренных служб: 112"
         android:textColor="#EF6C00"
-        android:textSize="24sp"
+        android:textSize="19sp"
         app:layout_constraintBottom_toBottomOf="@+id/imageView3"
         app:layout_constraintStart_toEndOf="@+id/imageView3"
-        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+        app:layout_constraintTop_toTopOf="@+id/imageView3"
+        app:layout_constraintVertical_bias="0.333" />
 
     <TextView
         android:id="@+id/textView7"
@@ -38,17 +39,29 @@
         android:layout_marginStart="5dp"
         android:text="@string/contacts_email"
         android:textColor="@color/third"
-        android:textSize="24sp"
+        android:textSize="25sp"
         app:layout_constraintBottom_toBottomOf="@+id/imageView4"
         app:layout_constraintStart_toEndOf="@+id/imageView4"
         app:layout_constraintTop_toTopOf="@+id/imageView4" />
+
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Скорая помощь 103"
+        android:textColor="@color/third"
+        android:textSize="25sp"
+        android:translationY="210dp"
+        app:layout_constraintStart_toStartOf="@+id/textView7"
+        tools:layout_editor_absoluteY="-7dp"></TextView>
 
     <ImageView
         android:id="@+id/imageView3"
         android:layout_width="44dp"
         android:layout_height="43dp"
-        android:layout_marginStart="10dp"
-        android:layout_marginTop="10dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="12dp"
         android:background="@color/first"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView2"
@@ -62,7 +75,16 @@
         android:background="@color/first"
         app:layout_constraintStart_toStartOf="@+id/imageView3"
         app:layout_constraintTop_toBottomOf="@+id/imageView3"
-        app:srcCompat="@android:drawable/ic_dialog_email" />
+        app:srcCompat="@android:drawable/ic_menu_call" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="44dp"
+        android:layout_height="43dp"
+        android:background="@color/first"
+        app:layout_constraintStart_toStartOf="@+id/imageView4"
+        app:layout_constraintTop_toBottomOf="@+id/imageView4"
+        app:srcCompat="@android:drawable/ic_menu_call" />
 
     <ImageView
         android:id="@+id/imageView5"
@@ -70,29 +92,31 @@
         android:layout_height="43dp"
         android:layout_marginTop="5dp"
         android:background="@color/first"
-        app:layout_constraintStart_toStartOf="@+id/imageView4"
-        app:layout_constraintTop_toBottomOf="@+id/imageView4"
+        app:layout_constraintStart_toStartOf="@+id/imageView2"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2"
         app:srcCompat="@android:drawable/ic_dialog_info" />
 
     <TextView
         android:id="@+id/textView8"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="5dp"
+        android:layout_height="32dp"
         android:text="@string/contacts_website"
         android:textColor="@color/third"
         android:textSize="24sp"
+        android:layout_marginLeft="5dp"
         app:layout_constraintBottom_toBottomOf="@+id/imageView5"
         app:layout_constraintStart_toEndOf="@+id/imageView5"
-        app:layout_constraintTop_toBottomOf="@+id/imageView4" />
+        app:layout_constraintTop_toBottomOf="@+id/imageView2" />
 
     <Button
         android:id="@+id/back"
         android:layout_width="50dp"
-        android:layout_height="40dp"
+        android:layout_height="50dp"
         android:layout_marginStart="20dp"
-        android:layout_marginTop="20dp"
-        android:text="←"
+        android:layout_marginTop="15dp"
+        android:backgroundTint="@color/white"
+        android:foreground="?attr/homeAsUpIndicator"
+        android:foregroundTint="@color/black"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -100,11 +124,34 @@
         android:id="@+id/home"
         android:layout_width="50dp"
         android:layout_height="50dp"
-        android:layout_marginTop="15dp"
+        android:layout_marginTop="10dp"
         android:layout_marginEnd="20dp"
+        android:backgroundTint="@color/white"
+        android:foreground="@mipmap/ic_launcher_foreground2"
         android:onClick="home_activity"
-        android:text="⌂"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:layout_width="371dp"
+        android:layout_height="47dp"
+        android:text="Телефон доверия (Горячая линия МВД РФ): (800) 222-74-47, (495) 667-74-47"
+        android:textColor="@color/third"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView10"
+        app:layout_constraintStart_toEndOf="@+id/imageView10"
+        app:layout_constraintTop_toTopOf="@+id/imageView10" />
+
+    <ImageView
+        android:id="@+id/imageView10"
+        android:layout_width="44dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="3dp"
+        android:background="@color/first"
+        app:layout_constraintEnd_toEndOf="@+id/imageView5"
+        app:layout_constraintStart_toStartOf="@+id/imageView5"
+        app:layout_constraintTop_toBottomOf="@+id/imageView5"
+        app:srcCompat="@android:drawable/ic_menu_call" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

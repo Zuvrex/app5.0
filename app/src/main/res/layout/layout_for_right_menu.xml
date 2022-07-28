@@ -11,7 +11,7 @@
         android:layout_width="48dp"
         android:layout_height="48dp"
         android:backgroundTint="@color/white"
-        android:foreground="@mipmap/ic_launcher"
+        android:foreground="@mipmap/ic_launcher_foreground2"
         android:translationX="300dp"
         android:translationY="100dp"
         tools:ignore="MissingConstraints"

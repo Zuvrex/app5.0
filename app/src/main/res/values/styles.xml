@@ -49,4 +49,22 @@
         <item name="android:textColor">@color/second</item>
         <item name="android:textSize">40sp</item>
     </style>
+
+    <style name="form_name">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">5sp</item>
+        <item name="android:layout_marginTop">5sp</item>
+        <item name="android:layout_marginBottom">5sp</item>
+        <item name="android:textColor">@color/second</item>
+        <item name="android:textSize">34sp</item>
+    </style>
+
+    <style name="form_text_style">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">5sp</item>
+        <item name="android:layout_marginRight">5sp</item>
+        <item name="android:textSize">22sp</item>
+    </style>
 </resources>

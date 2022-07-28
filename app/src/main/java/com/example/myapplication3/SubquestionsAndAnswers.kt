@@ -1,11 +1,21 @@
 package com.example.myapplication3
 
 import android.content.Intent
+import android.os.Build
 import android.os.Bundle
+import android.text.Html
+import android.text.Spanned
+import android.text.method.LinkMovementMethod
 import android.widget.*
 import androidx.appcompat.app.AppCompatActivity
 import com.example.myapplication3.test.TestQuestion1
 
+fun getHtml(htmlBody: String): Spanned {
+    return if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.N)
+        Html.fromHtml(htmlBody, Html.FROM_HTML_MODE_COMPACT)
+    else
+        Html.fromHtml(htmlBody)
+}
 
 class SubquestionsAndAnswers : AppCompatActivity() {
     private val db = DataBase(this)
@@ -67,7 +77,11 @@ class SubquestionsAndAnswers : AppCompatActivity() {
         }
         else if (stack.last() == 5) {
             question.text = "Общение с инспектором"
-        } else if (stack.last() == 132 || stack.last() == 133 || stack.last() == 211 || stack.last() == 212) {
+        }
+        else if (stack.last() == 6) {
+            question.text = "Кикшеринг"
+        }
+        else if (stack.last() == 132 || stack.last() == 133 || stack.last() == 211 || stack.last() == 212) {
             question.text = intent.getStringExtra("text")
         }
 
@@ -80,8 +94,10 @@ class SubquestionsAndAnswers : AppCompatActivity() {
                 intent.putExtra("last", stack.last())
                 startActivity(intent)
             } else {
-                question.text = qu_table.question[position] // присваеваем в поле вопроса текст вопроса
-                answer.text = qu_table.answer[position] // присваеваем в поле ответа текст ответа
+                question.text = getHtml(qu_table.question[position]) // присваеваем в поле вопроса текст вопроса
+                answer.text = getHtml(qu_table.answer[position]) // присваеваем в поле ответа текст ответа
+                question.setMovementMethod(LinkMovementMethod.getInstance());
+                answer.setMovementMethod(LinkMovementMethod.getInstance());
 
                 stack.add(qu_table.ID[position])    // В стэк записываем ID вопроса
                 qu_table = db.list_of_questions(stack.last())   // Подвопросы для этого вопроса
